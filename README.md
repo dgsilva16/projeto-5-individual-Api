@@ -1,7 +1,7 @@
 ## Projeto - Módulo 5 -individual-Api
 
 
-## Prepara+ Potencialize seu desempenho no exame!
+## Prepara+ Potencialize seu desempenho no vestibular!
 
 
 ## ENTENDENDO A PROPOSTA:
