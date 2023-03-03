@@ -1,132 +1,78 @@
-# projeto-5-individual-Api
+## Projeto - Módulo 5 -individual-Api
 
 
-# Projeto individual MÃ³dulo 5
+## Prepara+ Potencialize seu desempenho no exame!
 
 
-
-# [ API ] ClÃ­nica de Fisioterapia
-### ðŸ“‘ DescriÃ§Ã£o
-Desenvolvimento da <em>**API REST**</em> no **padrÃ£o MVC** que retorna informaÃ§Ãµes das entidades de um estÃºdio de tatuagem e efetua todas as operaÃ§Ãµes **CRUD**: ``Fisioterapeuta``, ``Pacientes``, ``Agendamento``, ``Equipamentos``.
+## ENTENDENDO A PROPOSTA:
 
 
+<p><p> O site do curso preparatório é uma plataforma online que oferece uma variedade de cursos e materiais de estudo para ajudar os alunos a se prepararem para vestibulares. Esse curso é projetado para ajudar os alunos a obterem as habilidades e conhecimentos necessários para passar em exames específicos, como o vestibular, o Enem, concursos públicos ou certificações profissionais. O site pode incluir aulas em vídeo, materiais de leitura, testes práticos e fóruns de discussão para que os alunos possam interagir e trocar ideias com outros estudantes. Algumas plataformas do site também oferece aulas ao vivo com professores, tutoriais personalizados e feedback para ajudar os alunos a melhorar seus desempenhos. Em resumo, o  site de curso **Prepara+** é uma ferramenta valiosa para aqueles que desejam se preparar adequadamente para um exame ou teste importante.
 
 
-**[ Tecnologias ]**
-
-<samp>
-  
-- <em>Node.js</em> | <em>SQLite3</em> | <em>Express</em> | <em>Insomnia</em> | <em>CORS</em> | <em>npm</em> | <em>Nodemon</em>
-  
-</samp>
-
-<details>
-<summary>  
-  <strong>Estrutura do DiretÃ³rio</strong>
-</summary>
-<br>
-
-```
-src/
-â”œâ”€ controllers/
-â”‚  â”œâ”€ FisioterapeutaController.js
-â”‚  â”œâ”€ PacientesController.js
-â”‚  â”œâ”€ AgendamentoController.js
-â”‚  â””â”€ EquipamentosController.js
-â”œâ”€ dao/
-â”‚  â”œâ”€ FisioterapeutaDAO.js
-â”‚  â”œâ”€ PacientesDAO.js
-â”‚  â”œâ”€ AgendamentoDAO.js
-â”‚  â””â”€ EquipamentosDAO.js
-â”œâ”€ models/
-â”‚  â”œâ”€ Fisioterapeuta.js
-â”‚  â”œâ”€ Pacientes.js
-â”‚  â”œâ”€ Agendamento.js
-â”‚  â””â”€ Equipamentos.js
-â”œâ”€ database/
-â”‚  â”œâ”€ create-and-populate.js
-â”‚  â”œâ”€ config.js
-â”‚  â””â”€ database.db
-â”œâ”€ routes/
-â”‚  â”œâ”€ fisioterapeuta.js
-â”‚  â”œâ”€ pacientes.js
-â”‚  â”œâ”€ agendamento.js
-â”‚  â””â”€ euipamentos.js
-â””â”€ main.js
-```
-
-</details>
-
-
-### ðŸŽ² Iniciando o Projeto
-
-
-<samp>
-  
-> **Warning** 
-> PrÃ©-Requisitos: Git, Node.js e um editor de cÃ³digo.
-
-</samp>
-
-```bash
-# Clone o repositÃ³rio
-$ git clone https://github.com/LaraSharmon/Projeto-API-Redmi.git
+# Clone o repositório
+$ git clone https://github.com/dgsilva16/projeto-5-individual-Api
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd clÃ­nicaApi
+$ cd Chat
 
-# Instale as dependÃªncias
+# Instale as dependências
 $ npm install
 
-# Execute a aplicaÃ§Ã£o 
+# Execute a aplicação 
 $ npm start
 
 # Acesse o servidor
-$ <http://localhost:6020>
-```
+$ <http://localhost:9091>
+
+
+
+#Rotas CRUD
+
 
 ## Rotas CRUD
 
-### [ 1 ] <em>Fisioterapeuta</em>
+### [ 1 ] <em>Autenticação</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-| **`GET`** | **/fisioterapeutas** | Retorna todos os fisioterapeutas. |
-|  **`GET`** | **/fisioterapeuta/id** | Retorna um fisioterapeuta. |
-|  **`POST`** | **/fisioterapeuta** | Cria um novo fisioterapeuta.  |
-|  **`PUT`** | **/fisioterapeuta/id** | Altera os dados do fisioterapeuta.
-|  **`DELETE`** | **/fisioterapeuta/id** | Remove o fisioterapeuta.
+| **`GET`** | **/Autenticação** | Retorna todos as Autenticação. |
+|  **`GET`** | **/Autenticação/id** | Retorna uma Autenticação. |
+|  **`POST`** | **/Autenticação** | Cria uma nova Autenticação.  |
+|  **`PUT`** | **/Autenticação/id** | Altera os dados de uma Autenticação.
+|  **`DELETE`** | **/Autenticação/id** | Remove a Autenticação.
   
-### [ 2 ] <em>Pacientes</em>
+### [ 2 ] <em>Consulta de Cursos/em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/pacientes** | Retorna todos os Pacientes. |
-|  **`GET`** | **/paciente/id** | Retorna um Paciente. |
-|  **`POST`** | **/paciente** | Cria um novo Paciente.  |
-|  **`PUT`** | **/paciente/id** | Altera os dados do Paciente.
-|  **`DELETE`** | **/paciente/id** | Remove o Paciente.
+|  **`GET`** | **/Consulta de Cursos** | Retorna todas as Consulta de Cursos. |
+|  **`GET`** | **/Consulta de Cursos/id** | Retorna uma Consulta de Cursos. |
+|  **`POST`** | **/Consulta de Cursos** | Cria uma nova Consulta de Cursos.  |
+|  **`PUT`** | **/Consulta de Cursos/id** | Altera os dados da Consulta de Cursos.
+|  **`DELETE`** | **/Consulta de Cursos/id** | Remove a Consulta de Cursos.
   
   
-### [ 2 ] <em>Agendamento</em>
+### [ 3 ] <em>Inscrição</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/agendamentos** | Retorna todos os agendamentos. |
-|  **`GET`** | **/agendamento/id** | Retorna um agendamento. |
-|  **`POST`** | **/agendamento** | Cria um novo agendamento.  |
-|  **`PUT`** | **/agendamento/id** | Altera os dados do agendamento.
-|  **`DELETE`** | **/agendamento/id** | Remove o agendamento.
+|  **`GET`** | **/Inscrição** | Retorna todas as Inscrição. |
+|  **`GET`** | **/Inscrição/id** | Retorna uma Inscrição. |
+|  **`POST`** | **/Inscrição** | Cria uma nova Inscrição.  |
+|  **`PUT`** | **/Inscrição/id** | Altera os dados da Inscrição.
+|  **`DELETE`** | **/Inscrição/id** | Remove a Inscrição.
 
 
-### [ 2 ] <em>Equipamentos</em>
+### [ 4 ] <em>Aulas</em>
 
-| MÃ©todo | Rota | DescriÃ§Ã£o |
+| Método | Rota | Descrição |
 | ------ | ----- | ----------- |
-|  **`GET`** | **/equipamentos** | Retorna todos os equipamentos. |
-|  **`GET`** | **/equipamento/id** |  Retorna um equipamento. |
-|  **`POST`** | **/equipamento** | Cria um novo mequipamento.  |
-|  **`PUT`** | **/equipamento/id** | Altera os dados do equipamento.
-|  **`DELETE`** | **/equipamento/id** | Remove o equipamento.
-  
+|  **`GET`** | **/Aulas** | Retorna todas as Aulas. |
+|  **`GET`** | **/Aulas/id** |  Retorna as Aulas. |
+|  **`POST`** | **/Aulas** | Cria uma nova Aulas.  |
+|  **`PUT`** | **/Aulas/id** | Altera as Aulas.
+|  **`DELETE`** | **/Aulas/id** | Remove as Aulas.
+
+
 
